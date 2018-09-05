@@ -1,0 +1,29 @@
+- functionalViews: [
+    ]
+  ip: downscaler2
+  library: quickplay.kernel
+  nature: quickplay.kernel.c
+  ports:
+  - direction: in
+    port: input
+    properties:
+    - property: instanceName
+      value: data_in
+    - property: width
+      value: 8
+    type: quickplay.stream
+  - direction: out
+    port: output
+    properties:
+    - property: instanceName
+      value: data_out
+    - property: width
+      value: 8
+    type: quickplay.stream
+  properties:
+  - property: instanceName
+    value: downscaler2_1
+  - property: clockFrequency
+    value: 50
+  vendor: accelize.com
+  version: '1.0'

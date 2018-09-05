@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<qpb:job xmlns:qpb="https://www.quickplay.io" name="implementation_0" version="1.0">
+    <qpb:cloudinfos>
+        <qpb:jobid value="35777" />
+        <qpb:date value="16/08/2018-09:50:39 UTC" />
+        <qpb:status value="OK" />
+        <qpb:msg value="25/25" />
+        <qpb:downloaded value="yes_implement" />
+        <qpb:downloadattempts value="0" />
+        <qpb:lastmsgid value="31046" />
+        <qpb:pubkey value="-----BEGIN PUBLIC KEY-----&#x0D;&#x0A;MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAx6+Im1RIe0FmFyN9iMNf&#x0D;&#x0A;bk0B8RBvtkOALglwyelZ8LN7jw6zfo2BBo/h0VcjJbnItOeZHhubmkioQ4uxywR/&#x0D;&#x0A;vMB9cj7O2ypdEH/yAZYmp5e3214Wx8fDh1xec2Oui8NMpLq7EJVKjbcixYtmELKU&#x0D;&#x0A;etLtwY207lC7m/IWk41F1gZ/x5//XdojxPoXYb7UnLf7BDKX3Il5ys0HKtV/6FWS&#x0D;&#x0A;hRh8iF/0wtbc96/xwZc+ARi2zkud0gvrSx6ZVxeynxeDfj5zbRWfrT71k8bX1h8v&#x0D;&#x0A;gJmmyQzjyXR+rCb5A7Xm8oAyAT9M3a5eQcfvuAkPEkpMFlwkTKV1MO1MJb5NePHU&#x0D;&#x0A;Cois2S3aKzor9s3dR/1SHx15L8BmUb/hdLUZKXIgdPwwyg/T9Dyudxq5jMzRK5LQ&#x0D;&#x0A;cG3NosDzluNMvJ/A+ne9iMX27eCDjU/u7uiAMcoSnh6F3dTfasT48VDu3R19LtN0&#x0D;&#x0A;PFlTIzI5Qn/dQNNnJs759CD93RvIC5SH5Wb1OqKomoSWdET7YtsfB+RhQ9U7NyM+&#x0D;&#x0A;JbF+imShTzo1zKQEG4brEcZi0bKEjussH8NeT0AzELAGYuq+n0QtHRIz/cmGP0c7&#x0D;&#x0A;gGh/WTcm4Oj0FA8ZpJXVPOgAAPHObZ6xbwmz2Fa2/QAoP4rwKk3QasoXO7AjMq1m&#x0D;&#x0A;2qUVylF3sZv49mLjD8sFKtMCAwEAAQ==&#x0D;&#x0A;-----END PUBLIC KEY-----&#x0D;&#x0A;" />
+        <qpb:timeskew value="n/a" />
+        <qpb:httpcode value="200" />
+        <qpb:httpmsg value="OK" />
+        <qpb:bugurl value="n/a" />
+        <qpb:transferprogress value="100.0" />
+        <qpb:transferdirection value="down" />
+    </qpb:cloudinfos>
+</qpb:job>
