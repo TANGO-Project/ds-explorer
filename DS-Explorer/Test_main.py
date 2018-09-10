@@ -94,60 +94,28 @@ else:
     fifoChanged = 0
 print("Byte width: %s\n" % width + "Frequency: %s\n" % freq + "FIFO Size: %s" % fifo)
 
-print(widthChanged)
-print(freqChanged)
-print(fifoChanged)
-# Make the changes in the yaml files
 i = 0
 if widthChanged or freqChanged or fifoChanged:
     print("Config changed")
+    print("Byte width: %s\n" % width + "Frequency: %s\n" % freq + "FIFO Size: %s" % fifo)
     for each in yamlList:
         yamlFile = path + '\\' + yamlList[i]
-        currentFile = open(yamlFile, 'r+')
         if widthChanged:
-            for line in currentFile:
-                prop = re.match("^\s*- property:\s*(.+)\s*$", line)
-                if prop:
-                    propIs = prop.group(1)
-                    if 'width' in propIs:
-                        value = currentFile.next()
-                        findValue = re.match("^\s*value:\s*(.+)\s*$", value)
-                        if findValue:
-                            retWidth = findValue.group(1)
-                            changeWidth = re.sub(retWidth, width, value)
-                            print(changeWidth)
-                            a = 'value: ' + retWidth
-           # currentFile.seek(0)
-           # for line in currentFile:
-                if a not in line:
-                    currentFile.write(line)
-                else:
-                    currentFile.write(changeWidth)
-            #currentFile.truncate()
-        # Parse and find clock frequency value
-        # elif freqChanged:
-        #     for line in currentFile:
-        #         prop1 = re.match("^\s*- property:\s*(.+)\s*$", line)
-        #         if prop1:
-        #             prop1Is = prop1.group(1)
-        #             if 'clockFrequency' in prop1Is:
-        #                 value1 = currentFile.next()
-        #                 findValue1 = re.match("^\s*value:\s*(.+)\s*$", value1)
-        #                 if findValue1:
-        #                     retFreq = findValue1.group(1)
-        #                     changeFreq = re.sub(retFreq, freq, value1)
-        #                     print(changeFreq)
-        # # Parse and find FIFO width value
-        # elif fifoChanged:
-        #     for line in currentFile:
-        #         prop2 = re.match("^\s*- property:\s*(.+)\s*$", line)
-        #         if prop2:
-        #             prop2Is = prop2.group(1)
-        #             if 'size' in prop2Is:
-        #                 value2 = currentFile.next()
-        #                 findValue2 = re.match("^\s*value:\s*(.+)\s*$", value2)
-        #                 if findValue2:
-        #                     retFIFO = findValue2.group(1)
-        #                     changeFIFO = re.sub(retFIFO, fifo, value2)
-        #                     print(changeFIFO)
+            currentFile = open(yamlFile, 'r')
+            lines = currentFile.readlines()
+            currentFile.close()
+            a = 'value: ' + retWidth
+            b = 'value: ' + retFreq
+            c = 'value: ' + retFIFO
+            currentFile = open(yamlFile, 'w')
+            for line in lines:
+                if a in line:
+                    line = '\t  value:' + width + '\n'
+                if b in line:
+                    line = '\t  value:' + freq + '\n'
+                if c in line:
+                    line = '\t  value:' + fifo + '\n'
+                currentFile.write(line)
+            currentFile.close()
         i = i + 1
+
