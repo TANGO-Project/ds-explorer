@@ -92,12 +92,9 @@ if "yes" in input3:
 else:
     fifo = retFIFO
     fifoChanged = 0
-print("Byte width: %s\n" % width + "Frequency: %s\n" % freq + "FIFO Size: %s" % fifo)
 
 i = 0
 if widthChanged or freqChanged or fifoChanged:
-    print("Config changed")
-    print("Byte width: %s\n" % width + "Frequency: %s\n" % freq + "FIFO Size: %s" % fifo)
     for each in yamlList:
         yamlFile = path + '\\' + yamlList[i]
         if widthChanged:
