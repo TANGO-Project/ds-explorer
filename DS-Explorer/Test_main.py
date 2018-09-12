@@ -107,11 +107,11 @@ if widthChanged or freqChanged or fifoChanged:
             currentFile = open(yamlFile, 'w')
             for line in lines:
                 if a in line:
-                    line = '\t  value:' + width + '\n'
+                    line = '      value: ' + width + '\n'
                 if b in line:
-                    line = '\t  value:' + freq + '\n'
+                    line = '    value: ' + freq + '\n'
                 if c in line:
-                    line = '\t  value:' + fifo + '\n'
+                    line = '        value: ' + fifo + '\n'
                 currentFile.write(line)
             currentFile.close()
         i = i + 1
