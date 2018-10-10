@@ -8,7 +8,7 @@ DS-Explorer, is written in Python, and supported on standard Linux distributions
 While it was first intended to interface with various HLS (High Level Synthesis) tools, we focused, for the first release, on leveraging QuickPlay  which provides support for various FPGA targets and generates the low-level hardware and communication interfaces with the FPGA.
 To install the QuickPlay IDE, the user should refer to the installation instructions here (account needed):
 https://quickstore.quickplay.io/content/quickplay-software
-To install DS-Explorer, a user just needs to copy the program files into a folder of his choice and optionally add that folder to the user’s system path to allow seamless execution of the program.
+To install DS-Explorer, a user just needs to copy the program files into a folder of his choice and optionally add that folder to the userâ€™s system path to allow seamless execution of the program.
 
 Platforms Supported
 
