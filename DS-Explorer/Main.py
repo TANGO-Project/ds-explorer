@@ -17,8 +17,8 @@ a = File_Parsing.FileParse(sourcePath)
 # Command line execution for compilation, build and implementation of design
 
 comp = os.system("quickplay -cli compile --design=/home/lg/workspace/Clone_SobelPiP")
-build = os.system("quickplay -cli build --design=/home/lg/workspace/Clone_SobelPiP --implemntation=implementation_0")
-impl = os.system("quickplay -cli implement --design=/home/lg/workspace/Clone_SobelPiP --implemntation=implementation_0")
+build = os.system("quickplay -cli build --design=/home/lg/workspace/Clone_SobelPiP --implementation=implementation_0")
+impl = os.system("quickplay -cli implement --design=/home/lg/workspace/Clone_SobelPiP --implementation=implementation_0")
 
 # Location of reports generated after the design is implemented
 reportsPath = "C:\RH7_Shared\Clone_SobelPiP_50Mhz & 8 bits\implementations\implementation_0\\reports"
