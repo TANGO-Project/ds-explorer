@@ -1,4 +1,3 @@
-import shutil
 import File_Parsing
 import Report_parsing
 import datetime
@@ -7,10 +6,7 @@ import os
 ts = str(datetime.datetime.now())      # Get timestamp and make it convert it to str type
 ts = filter(str.isalnum, ts)           # Remove special characters from timestamp so that it can be used in folder name
 
-sourcePath = "C:\RH7_Shared\Clone_SobelPiP_50Mhz & 8 bits\impl\implementation_0"     # Location of the yaml files
-destPath = "C:/Users/bv/Documents/backup_yaml/" + ts                                 # Location to store backup files
-shutil.copytree(sourcePath, destPath, symlinks=False, ignore=None)
-print("Files backed up\n")
+sourcePath = "C:\RH7_Shared\Clone_SobelPiP_50Mhz & 32bits\impl\implementation_0"     # Location of the yaml files
 
 a = File_Parsing.FileParse(sourcePath)
 
