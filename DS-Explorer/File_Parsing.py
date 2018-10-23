@@ -153,5 +153,4 @@ class FileParse:
                 change_config(destPath)
                 input_config = raw_input("Do you want to test another config?(Yes/No): ")
                 input_config = input_config.lower()
-
-
+        fcount = config_counter

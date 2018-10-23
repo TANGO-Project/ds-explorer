@@ -1,7 +1,7 @@
 import File_Parsing
 import Report_parsing
+import Command_Exec
 import datetime
-import os
 
 ts = str(datetime.datetime.now())      # Get timestamp and make it convert it to str type
 ts = filter(str.isalnum, ts)           # Remove special characters from timestamp so that it can be used in folder name
@@ -12,10 +12,8 @@ a = File_Parsing.FileParse(sourcePath)
 
 # Command line execution for compilation, build and implementation of design
 
-comp = os.system("quickplay -cli compile --design=/home/lg/workspace/Clone_SobelPiP")
-build = os.system("quickplay -cli build --design=/home/lg/workspace/Clone_SobelPiP --implementation=implementation_0")
-impl = os.system("quickplay -cli implement --design=/home/lg/workspace/Clone_SobelPiP --implementation=implementation_0")
+b = Command_Exec.CommandExec(sourcePath)
 
 # Location of reports generated after the design is implemented
-reportsPath = "C:\RH7_Shared\Clone_SobelPiP_50Mhz & 8 bits\implementations\implementation_0\\reports"
-b = Report_parsing.ReportParse(reportsPath)
+reportsPath = "C:\RH7_Shared\Clone_SobelPiP_50Mhz & 32bits\implementations"
+c = Report_parsing.ReportParse(reportsPath)
