@@ -2,7 +2,7 @@
 
 &copy; CETIC 2018 www.cetic.be
 
-DS_Explorer is currently developed as a component within the framework of [TANGO](http://tango-project.eu) European Project
+DS-Explorer is currently developed as a component within the framework of [TANGO](http://tango-project.eu) European Project
 
 DS-Explorer is distributed under a [BSD 3-Clause License](https://github.com/TANGO-Project/ds-explorer/blob/master/LICENSE).
 
