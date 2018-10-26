@@ -42,15 +42,67 @@ Red Hat Enterprise Linux 	7	Requirement of the underlying tool QuickPlay
 As previously indicated, DS-Explorer, being written in Python, only needs that the Python environment be available on the development machine (or virtual machine) and the DS-Explorer source files tree be copied locally.
 
 ## Example of Tool Usage
+___
+ *$ ./Main.py
 
-Current version of DS-Explorer is a command line tool that realizes the following steps:
-1.	DS-Explorer parses the configuration files of the QuickPlay project that is passed as a parameter and extracts the relevant
-configuration parameters that can be tuned, modified or adapted to explore various derivatives from the original design.
-2.	DS-Explorer exposes those parameters to the user and asks them about the variations they would like to explore through a series
-of questions and answers (Q&A).
-3.	Based on the user answers, DS-Explorer generates clones of the original design with the new parameters as specified by the user
-4.	DS-Explorer compile, builds and implements the different generated QuickPlay designs. This will produce various reports, of which
-the power, timing and resource utilization reports are the most important
-5.	DS-Explorer parses output reports and formats relevant characterization data about power, timing and resource utilization for the
-different implementations of the FPGA kernel in a raw output file. These data will serve as attribute values in the JSON input file for
-the Placer tool. Future versions of DS-Explorer will handle automatic generation of JSON file generation.
+set(['Number of yaml files = 14'])
+
+ The byte width is 8
+
+The clock frequency is 50
+
+The FIFO size is 14400
+
+Do you want to change the config?(Yes/No): yes
+
+Would you like to change the byte width?(Yes/No): yes
+
+The byte width takes the following values: 8, 16, 32, 64
+
+Enter the new byte width: 16
+
+Would you like to change the clock frequency?(Yes/No): no
+
+Would you like to change the FIFO size?(Yes/No): yes
+
+The byte width takes the following values: 2048, 4096, 14400, 230400
+
+Enter the new FIFO size: 4096
+
+Do you want to test another config?(Yes/No): yes
+
+Would you like to change the byte width?(Yes/No): no
+
+Would you like to change the clock frequency?(Yes/No): yes
+
+The clock frequency takes the following values: 50, 75, 100, 200
+
+Enter the new clock frequency: 100
+
+Would you like to change the FIFO size?(Yes/No): no
+
+Do you want to test another config?(Yes/No): no
+
+INFO-01:    ===================================================================
+
+INFO-01:    QuickPlay batch version: 4.1.6
+
+INFO-01:    Mode      : client
+
+INFO-01:    Step      : compile
+
+INFO-01:    Project   : Clone_SobelPiP
+
+INFO-01:    Solution  : implementation_0
+
+INFO-01:    Start time: 26/Oct/2018-11:19:50 UTC
+
+INFO-01:    ===================================================================
+
+INFO-01:    Starting project Clone_SobelPiP compile step ...
+
+INFO-01:    Starting project check...  
+
+INFO-01:    Project check successfully done.
+
+INFO-01:    Starting C++ compilation...*

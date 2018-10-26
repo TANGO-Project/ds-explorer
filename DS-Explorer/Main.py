@@ -1,4 +1,4 @@
-# !/usr/bin/env python
+#!/usr/bin/env python
 
 # * DS-Explorer is being developed for the TANGO Project: http://tango-project.eu
 # * Copyright 2018 CETIC www.cetic.be
@@ -15,7 +15,7 @@ import datetime
 ts = str(datetime.datetime.now())  # Get timestamp and make it convert it to str type
 ts = filter(str.isalnum, ts)  # Remove special characters from timestamp so that it can be used in folder name
 
-sourcePath = "C:\RH7_Shared\Clone_SobelPiP_50Mhz & 32bits\impl\implementation_0"  # Location of the yaml files
+sourcePath = "./workspace/Sobel_Pip/impl/implementation_0"  # Location of the yaml files for default configuration
 
 a = File_Parsing.FileParse(sourcePath)
 
@@ -24,5 +24,5 @@ a = File_Parsing.FileParse(sourcePath)
 b = Command_Exec.CommandExec(sourcePath)
 
 # Location of reports generated after the design is implemented
-reportsPath = "C:\RH7_Shared\Clone_SobelPiP_50Mhz & 32bits\implementations"
+reportsPath = "./workspace/Sobel_Pip/implementations"
 c = Report_parsing.ReportParse(reportsPath)
