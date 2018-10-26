@@ -1,9 +1,0 @@
-- entitlements:
-    []
-  ip: XpressKUS_XCKU040
-  library: quickplay.board
-  properties:
-    - property: instanceName
-      value: XpressKUS_XCKU040
-  vendor: plda.com
-  version: 2.2.4
