@@ -1,10 +1,11 @@
+# !/usr/bin/env python
+
 # * DS-Explorer is being developed for the TANGO Project: http://tango-project.eu
 # * Copyright 2018 CETIC www.cetic.be
 # * DS-Explorer is a free software: you can redistribute it and/or modify
 # * it under the terms of the BSD 3-Clause License
 # * Please see the License file for more information
 
-# !/usr/bin/env python
 
 import File_Parsing
 import Report_parsing
