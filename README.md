@@ -133,7 +133,6 @@ A consolidated report is generated in the root folder, after parsing through the
 >
 > | Site Type | Used     | Fixed | Available | Util% |
 > |:----------|:---------|:----------|:---------|:---------|
-> |:----------|:---------|:----------|:---------|
 > | CLB                                       | 10293 |     0 |     30300 | 33.97 |
 > | LUT as Logic                              | 51630 |     0 |    242400 | 21.30 |
 > | LUT as Memory                             |   470 |     0 |    112800 |  0.42 |
@@ -156,7 +155,7 @@ A consolidated report is generated in the root folder, after parsing through the
 > Advanced
 >
 > | Site Type    | Used | Fixed | Available | Util% |
-> | :------------- | :------------- | :------------- |
+> | :------------- | :------------- | :------------- | :------------- | :------------- |
 > | PCIE_3_1        |    1 |     1 |         3 | 33.33
 >
 > Clock Primitive Utilization
