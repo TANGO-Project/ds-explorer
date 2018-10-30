@@ -87,9 +87,10 @@ Enter the new clock frequency: 100
 
 Would you like to change the FIFO size?(Yes/No): no
 
-Do you want to test another config?(Yes/No): no````
+Do you want to test another config?(Yes/No): no ````
 
 When the user has completed assigning the different configurations, the different configs will be compiled and implemented and the reports generated.
+
 ````
 INFO-01:    ===================================================================
 
@@ -124,7 +125,6 @@ INFO-01:    ===================================================================
 INFO-01:    End time  : 14/Aug/2018-11:10:30 UTC ( elapsed: 3128.879 secs)
 INFO-01:    Exit value: 0
 INFO-01:    ===================================================================
-
 ````
 A consolidated report is generated in the root folder, after parsing through the reports obtained from QuickPlay implementation.
 
