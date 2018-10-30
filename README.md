@@ -131,8 +131,8 @@ A consolidated report is generated in the root folder, after parsing through the
 **Example of the generated file:**
 > CLB Logic Distribution
 >
-> | Site Type | Used     | Fixed | Available | Util%
-> |:----------|:---------|:----------|:---------|
+> | Site Type | Used     | Fixed | Available | Util% |
+> |:----------|:---------|:----------|:---------|:---------|
 > | CLB                                       | 10293 |     0 |     30300 | 33.97 |
 > | LUT as Logic                              | 51630 |     0 |    242400 | 21.30 |
 > | LUT as Memory                             |   470 |     0 |    112800 |  0.42 |
@@ -141,7 +141,7 @@ A consolidated report is generated in the root folder, after parsing through the
 > BLOCKRAM
 >
 > |     Site Type     | Used | Fixed | Available | Util%  |
-> | :------------- | :------------- |
+> | :------------- | :------------- | :------------- | :------------- | :------------- |
 > |Block RAM Tile    |  222 |     0 |       600 | 37.00 |
 > |   RAMB36/FIFO*    |  192 |     2 |       600 | 32.00 |
 > |   RAMB18          |   60 |    12 |      1200 |  5.00 |
@@ -149,19 +149,19 @@ A consolidated report is generated in the root folder, after parsing through the
 > Arithmetic
 >
 > | Site Type | Used | Fixed | Available | Util% |
-> | :------------- | :------------- |
+> | :------------- | :------------- | :------------- | :------------- | :------------- |
 > |DSPs      |    0 |     0 |      1920 |  0.00
 >
 > Advanced
 >
 > | Site Type    | Used | Fixed | Available | Util% |
-> | :------------- | :------------- |
+> | :------------- | :------------- | :------------- |
 > | PCIE_3_1        |    1 |     1 |         3 | 33.33
 >
 > Clock Primitive Utilization
 >
 > |  Type       | Used | Available | LOC | Clock Region | Pblock |
-> | :------------- | :------------- |
+> | :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
 > | BUFGCE     |    8 |       240 |   0 |            0 |      0 |
 > | BUFGCE_DIV |    0 |        40 |   0 |            0 |      0 |
 > | BUFGCTRL   |    0 |        80 |   0 |            0 |      0 |
