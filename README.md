@@ -131,7 +131,7 @@ A consolidated report is generated in the root folder, after parsing through the
 **Example of the generated file:**
 > CLB Logic Distribution
 >
-> | Site Type | Used     | Fixed | Available | Util%
+> | Site Type | Used     | Fixed | Available | Util% |
 > |:----------|:---------|:----------|:---------|
 > | CLB                                       | 10293 |     0 |     30300 | 33.97 |
 > | LUT as Logic                              | 51630 |     0 |    242400 | 21.30 |
