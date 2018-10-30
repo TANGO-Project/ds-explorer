@@ -9,6 +9,7 @@ import os
 class ReportParse:
     def __init__(self, path):
         self.path = path
+        path = path + "\implementations"
         folderList = os.listdir(path)
         fcount = 0
         folderList1 = []

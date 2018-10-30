@@ -7,15 +7,12 @@
 # * Please see the License file for more information
 
 
+import sys
 import File_Parsing
 import Report_parsing
 import Command_Exec
-import datetime
 
-ts = str(datetime.datetime.now())  # Get timestamp and make it convert it to str type
-ts = filter(str.isalnum, ts)  # Remove special characters from timestamp so that it can be used in folder name
-
-sourcePath = "./workspace/Sobel_Pip/impl/implementation_0"  # Location of the yaml files for default configuration
+sourcePath = sys.argv[1]  # Location of the yaml files
 
 a = File_Parsing.FileParse(sourcePath)
 
@@ -23,6 +20,6 @@ a = File_Parsing.FileParse(sourcePath)
 
 b = Command_Exec.CommandExec(sourcePath)
 
-# Location of reports generated after the design is implemented
-reportsPath = "./workspace/Sobel_Pip/implementations"
-c = Report_parsing.ReportParse(reportsPath)
+# Report parsing and generation of consolidated report after implementation
+
+c = Report_parsing.ReportParse(sourcePath)

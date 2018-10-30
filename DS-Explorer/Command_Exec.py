@@ -10,7 +10,7 @@ import os
 class CommandExec:
     def __init__(self, path):
         self.path = path
-        pathfolder = path[:-17]
+        pathfolder = path + "\impl"
         folderList = os.listdir(pathfolder)
         fcount = 0
         folderList1 = []

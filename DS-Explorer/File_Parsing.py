@@ -12,6 +12,7 @@ import shutil
 class FileParse:
     def __init__(self, path):
         self.path = path
+        path = path + "\impl\implementations_0"
         fileList = os.listdir(path)
         count = 0
         yamlList = []
@@ -21,7 +22,7 @@ class FileParse:
             if ".yaml" in eachFile:
                 yamlList.append(eachFile)
                 count = count + 1
-        print {"Number of yaml files = %d" % count}
+        print{"Number of yaml files = %d" % count}
         # Parse each file and extract byte width, clock frequency & FIFO width and display the values to the user
         for each in yamlList:
             yamlFile = path + '\\' + yamlList[i]

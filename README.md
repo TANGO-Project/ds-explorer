@@ -42,17 +42,23 @@ Red Hat Enterprise Linux 	7	Requirement of the underlying tool QuickPlay
 As previously indicated, DS-Explorer, being written in Python, only needs that the Python environment be available on the development machine (or virtual machine) and the DS-Explorer source files tree be copied locally.
 
 ## Example of Tool Usage
-___
- *$ ./Main.py
+The tool is run, passing the paths of the project argument:
 
-set(['Number of yaml files = 14'])
+``$ ./DS-Explorer.py QuickPlay/MyProject/``
 
- The byte width is 8
+The number of yaml files is counted and displayed to the user along with the byte width, frequency and FIFO size
+
+```output
+Number of yaml files = 14
+
+The byte width is 8
 
 The clock frequency is 50
 
-The FIFO size is 14400
+The FIFO size is 14400````
 
+The user is prompted for changing the configuration
+```` output
 Do you want to change the config?(Yes/No): yes
 
 Would you like to change the byte width?(Yes/No): yes
@@ -81,8 +87,10 @@ Enter the new clock frequency: 100
 
 Would you like to change the FIFO size?(Yes/No): no
 
-Do you want to test another config?(Yes/No): no
+Do you want to test another config?(Yes/No): no````
 
+When the user has completed assigning the different configurations, the different configs will be compiled and implemented and the reports generated.
+````output
 INFO-01:    ===================================================================
 
 INFO-01:    QuickPlay batch version: 4.1.6
@@ -105,4 +113,65 @@ INFO-01:    Starting project check...
 
 INFO-01:    Project check successfully done.
 
-INFO-01:    Starting C++ compilation...*
+INFO-01:    Starting C++ compilation...
+.
+.
+.
+.
+.
+INFO-01:    Project MyProject implement step for implementation_0 successfully done.
+INFO-01:    ===================================================================
+INFO-01:    End time  : 14/Aug/2018-11:10:30 UTC ( elapsed: 3128.879 secs)
+INFO-01:    Exit value: 0
+INFO-01:    ===================================================================
+
+````
+A consolidated report is generated in the root folder, after parsing through the reports obtained from QuickPlay implementation.
+
+**Example of the generated file:**
+> CLB Logic Distribution
+>
+> | Site Type | Used     | Fixed | Available | Util%
+> |:----------|:---------|:----------|:---------|
+> | CLB                                       | 10293 |     0 |     30300 | 33.97 |
+> | LUT as Logic                              | 51630 |     0 |    242400 | 21.30 |
+> | LUT as Memory                             |   470 |     0 |    112800 |  0.42 |
+> | LUT Flip Flop Pairs                       | 24930 |     0 |    242400 | 10.28 |
+>
+> BLOCKRAM
+>
+> |     Site Type     | Used | Fixed | Available | Util%  |
+> | :------------- | :------------- |
+> |Block RAM Tile    |  222 |     0 |       600 | 37.00 |
+> |   RAMB36/FIFO*    |  192 |     2 |       600 | 32.00 |
+> |   RAMB18          |   60 |    12 |      1200 |  5.00 |
+>
+> Arithmetic
+>
+> | Site Type | Used | Fixed | Available | Util% |
+> | :------------- | :------------- |
+> |DSPs      |    0 |     0 |      1920 |  0.00
+>
+> Advanced
+>
+> | Site Type    | Used | Fixed | Available | Util% |
+> | :------------- | :------------- |
+> | PCIE_3_1        |    1 |     1 |         3 | 33.33
+>
+> Clock Primitive Utilization
+>
+> |  Type       | Used | Available | LOC | Clock Region | Pblock |
+> | :------------- | :------------- |
+> | BUFGCE     |    8 |       240 |   0 |            0 |      0 |
+> | BUFGCE_DIV |    0 |        40 |   0 |            0 |      0 |
+> | BUFGCTRL   |    0 |        80 |   0 |            0 |      0 |
+> | BUFG_GT    |    5 |       120 |   0 |            0 |      5 |
+> | MMCM       |    1 |        10 |   0 |            0 |      0 |
+> | PLL        |    0 |        20 |   0 |            0 |      0 |
+>
+> Total Power and Dynamic Power
+>
+> | Power   | Value     |
+> | :------------- | :------------- |
+> |  Total On-Chip Power (W)  | 3.592  |
+> | Dynamic (W)              | 3.035    |
