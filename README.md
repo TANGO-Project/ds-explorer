@@ -58,6 +58,7 @@ The clock frequency is 50
 The FIFO size is 14400````
 
 The user is prompted for changing the configuration
+
 ````output
 Do you want to change the config?(Yes/No): yes
 
@@ -87,11 +88,11 @@ Enter the new clock frequency: 100
 
 Would you like to change the FIFO size?(Yes/No): no
 
-Do you want to test another config?(Yes/No): no ````
+Do you want to test another config?(Yes/No): no````
 
 When the user has completed assigning the different configurations, the different configs will be compiled and implemented and the reports generated.
 
-````
+````output
 INFO-01:    ===================================================================
 
 INFO-01:    QuickPlay batch version: 4.1.6
