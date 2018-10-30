@@ -132,15 +132,10 @@ A consolidated report is generated in the root folder, after parsing through the
 > CLB Logic Distribution
 >
 > | Site Type | Used     | Fixed | Available | Util% |
-
 > |:----------|:---------|:----------|:---------|
-
 > | CLB                                       | 10293 |     0 |     30300 | 33.97 |
-
 > | LUT as Logic                              | 51630 |     0 |    242400 | 21.30 |
-
 > | LUT as Memory                             |   470 |     0 |    112800 |  0.42 |
-
 > | LUT Flip Flop Pairs                       | 24930 |     0 |    242400 | 10.28 |
 
 >
