@@ -58,7 +58,7 @@ The clock frequency is 50
 The FIFO size is 14400````
 
 The user is prompted for changing the configuration
-````
+````output
 Do you want to change the config?(Yes/No): yes
 
 Would you like to change the byte width?(Yes/No): yes
