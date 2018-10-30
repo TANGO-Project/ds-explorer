@@ -58,7 +58,7 @@ The clock frequency is 50
 The FIFO size is 14400````
 
 The user is prompted for changing the configuration
-```` 
+````
 Do you want to change the config?(Yes/No): yes
 
 Would you like to change the byte width?(Yes/No): yes
@@ -132,16 +132,12 @@ A consolidated report is generated in the root folder, after parsing through the
 > CLB Logic Distribution
 >
 > | Site Type | Used     | Fixed | Available | Util% |
-<<<<<<< HEAD
 > |:----------|:---------|:----------|:---------|:---------|
-=======
 > |:----------|:---------|:----------|:---------|
->>>>>>> e1333c38403eb21c23f17c98565163eb9fda7b75
 > | CLB                                       | 10293 |     0 |     30300 | 33.97 |
 > | LUT as Logic                              | 51630 |     0 |    242400 | 21.30 |
 > | LUT as Memory                             |   470 |     0 |    112800 |  0.42 |
 > | LUT Flip Flop Pairs                       | 24930 |     0 |    242400 | 10.28 |
-
 >
 > BLOCKRAM
 >
